@@ -16,8 +16,8 @@ export default function setupExpanders() {
     for (const ex of expanders) {
         ex.addEventListener("click", e => {
             if ((e.target as Element).closest(".submenu-item,.item") !== ex) return;
-            e.preventDefault();
-            e.stopPropagation();
+            // e.preventDefault(); // chris2fr
+            // e.stopPropagation(); // chris2fr
             const ul = ex.querySelector("ul")!;
             ul.style.height = `${ul.scrollHeight}px`;
             setTimeout(() => ex.classList.toggle("expanded"), 1);

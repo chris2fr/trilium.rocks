@@ -7,18 +7,18 @@
 
 #menu {
     order: 1;
-/*         margin-left: auto; */
+    /*         margin-left: auto; */
 
     white-space: nowrap;
 
     flex: 0;
-/*         padding: 25px; */
+    /*         padding: 25px; */
 }
 
-#menu > ul {
+#menu>ul {
     overflow-y: auto;
     list-style: none;
-    padding-left: 0!important;
+    padding-left: 0 !important;
 }
 
 /*     #menu > ul, #menu > div {
@@ -36,11 +36,11 @@
 }
 
 #menu li {
-/*         overflow-y: hidden; */
+    /*         overflow-y: hidden; */
     position: relative;
     display: flex;
     flex-direction: column;
-     list-style: none;
+    list-style: none;
     cursor: pointer;
     max-width: 350px;
 }
@@ -56,24 +56,29 @@
     flex: 1
 }
 
-#menu li > ul {
+#menu li>ul {
     transition: height 200ms ease;
 }
 
-#menu li:not(.expanded) > ul {
-    height: 0!important;
-/*         transition: height 1000ms ease; */
+#menu li:not(.expanded)>ul {
+    height: 0 !important;
+    /*         transition: height 1000ms ease; */
 }
 
-#menu li.expanded > ul {
-/*         max-height: 500px; */
+#menu li:active>ul {
+    height: unset !important;
+    /*         transition: height 1000ms ease; */
+}
+
+#menu li.expanded>ul {
+    /*         max-height: 500px; */
 }
 
 #menu p {
     display: flex;
 }
 
-#menu li.item > a {
+#menu li.item>a {
     padding-left: 24px;
 }
 
@@ -131,15 +136,15 @@
     background: var(--background-secondary);
     border: 0;
     color: var(--text-menu);
-/*         position: absolute; */
-/*         top: 2px; */
-/*         left: -18px; */
+    /*         position: absolute; */
+    /*         top: 2px; */
+    /*         left: -18px; */
     transform: rotate(-90deg);
     transition: transform 200ms ease;
 }
 
-.expanded > .collapse-button,
-.expanded > a > .collapse-button {
+.expanded>.collapse-button,
+.expanded>a>.collapse-button {
     transform: rotate(0);
 }
 

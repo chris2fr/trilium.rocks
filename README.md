@@ -4,6 +4,19 @@
 
 **Disclaimer:** This project and website is not at all affiliated with Trilium Notes or its creator(s).
 
+## Compiling
+
+.env
+
+TRILIUM_ETAPI_TOKEN
+
+PAGE_TEMPLATE_ID
+
+JS_NOTE_ID
+
+CSS_NOTE_ID
+
+
 ## Why?
 
 I love Trilium, it has made me the most organized I have ever been in my many many years of digital storage. The only thing I found lacking was the centralization of information. The [wiki](https://github.com/zadam/trilium/wiki) is a great resource, but it's outdated in some areas, and lacking in many many others—especially in regards to developing addons for Trilium. I also don't personally use gitter so the [official Trilium gitter](https://gitter.im/trilium-notes/Lobby) is not useful for me, and last time I checked it was _very_ inactive. So I made the website [trilium.rocks](https://trilium.rocks) and [a Discord server](https://discord.gg/eTaTXUgcBr) to try and help with each of those respectively.
